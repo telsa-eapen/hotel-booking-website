@@ -1,0 +1,16 @@
+body{
+    height: 100%;
+    width: 100%;
+}
+#logoid
+{
+    width: 60px; height: 60px;
+}
+#city>img{
+height:150px ;
+width: 150px;
+}
+footer>a>img{
+    height: 20px;
+    width: 22px;
+}

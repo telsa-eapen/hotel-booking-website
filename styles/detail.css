@@ -1,0 +1,17 @@
+body{
+    height: 100%;
+    width: 100%;
+}
+header>a>#logoid1
+{
+    width: 60px; 
+    height: 60px;
+}
+#radisson{
+    height: 500px;
+    width: 500px;
+}
+footer>a>img{
+    height: 20px;
+    width: 22px;
+}

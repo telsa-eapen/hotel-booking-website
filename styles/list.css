@@ -1,0 +1,22 @@
+body{
+    height: 100%;
+    width: 100%;
+}
+header>a>#logoid1
+{
+    width: 60px; 
+    height: 60px;
+}
+#listview
+{
+    color: blue;
+    scroll-behavior: smooth;
+}
+.contentdiv{
+    width: 250px;
+    height: 250px;
+}
+footer>a>img{
+    height: 20px;
+    width: 22px;
+}
