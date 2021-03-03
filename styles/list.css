@@ -1,11 +1,25 @@
 body{
     height: 100%;
     width: 100%;
+    margin: 0;
+    background-color: #e0e0e0;
+}
+header{
+    background-color: rosybrown;
 }
 header>a>#logoid1
 {
     width: 60px; 
     height: 60px;
+    
+}
+#Content div{
+    margin: 2%;
+}
+#content div{
+    background-color:rgb(132, 136,139);
+    width: 40%;
+    height: auto;
 }
 #listview
 {
@@ -15,6 +29,9 @@ header>a>#logoid1
 .contentdiv{
     width: 250px;
     height: 250px;
+}
+footer{
+    background-color: rosybrown;
 }
 footer>a>img{
     height: 20px;

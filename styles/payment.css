@@ -1,6 +1,33 @@
 body{
     height: 100%;
     width: 100%;
+    margin: 0;
+    background-color: #e0e0e0;
+}
+header{
+    background-color:rosybrown;
+}
+footer{
+    background-color:rosybrown;
+}
+#contentpart1hotel{
+background-color: rgb(132,136, 139);
+margin-top: 2%;
+margin-bottom: 2%;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+}
+#customerdetails
+{
+margin: 2%;
+}
+#tariffdetails{
+    margin: 2%;
+    border:1px solid black;
+    border-radius: 5px;
+    
+    padding: 1% 2%;
 }
 #logoid
 {
