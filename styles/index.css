@@ -7,6 +7,8 @@ body{
 }
 header{
     background-color:rosybrown;
+    display:flex;
+    justify-content: space-between ;
     position: fixed;
     width: 100%;
     padding: auto;
@@ -24,22 +26,24 @@ header{
   width: 400px;
 
 }
-header>img{
-    margin: auto;
-}
+
 header>a{
     text-decoration: none;
     color: rgb(22, 20, 20);
    float: right;
     margin:20px;
+    margin-right: 2%;
+    
 }
-
+header>img{
+    margin-left: 1%;
+}
     
 #logoid
 {
     width: 60px; height: 60px;
 }
-#city>img{
+#city img{
 height:150px ;
 width: 150px;
 }
@@ -53,28 +57,107 @@ width: 150px;
     
 }
 #city{
-    margin-left: 15%;
-    margin-right: 15%;
+   display: flex;
+   justify-content: center;
+   
 }
-#city img{padding: 4%; border-radius: 25%;}
+#city a{
+    padding: 4%;
+}
+#city img{padding: 4%; border-radius: 25%;
 
-#content{
+box-shadow:10px 10px 10px grey;}
 
+#content>#containsearch>input{
+outline-style: none;
 }
 footer{
     background-color: rosybrown;
     width: 100%;
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 34px;
+  height: max-content;
+  bottom: 0;
     position: fixed;
-    
-    bottom: 0;
+    padding-left: 2px;
+   
     
     
 }
-footer>a>img{
-    height: 20px;
-    width: 22px;
-   
+.img_wrap{
+    position: relative;
+    height: 150px;
+    width: 150px;
+}
+.img_desc{
+    position: absolute;
+    top: 50px;
+  bottom: 0;
+  left: 30px;
+  right: 0;
+  color: #f1f1f1;
+    visibility: hidden;
+}
+.img_wrap:hover .img_desc{
+    visibility: visible;
+    
+    opacity: .51;
+}
+.img_wrap1{
+    position: relative;
+   top:20px;
+}
+.img_desc1{
+    position: absolute;
+    top: 50px;
+  bottom: 0;
+  left: 30px;
+  right: 0;
+  color: black;
+    visibility: hidden;
+}
+.img_wrap1:hover .img_desc1{
+    visibility: visible;
+    
+    opacity: .51;
+}
+.img_wrap2{
+    position: relative;
+   top:20px;
+}
+.img_desc2{
+    position: absolute;
+    top: 50px;
+  bottom: 0;
+  left: 30px;
+  right: 0;
+  color: black;
+    visibility: hidden;
+}
+.img_wrap2:hover .img_desc2{
+    visibility: visible;
+    
+    opacity: .51;
+}
+.img_wrap3{
+    position: relative;
+   top:20px;
+}
+.img_desc3{
+    position: absolute;
+    top: 50px;
+  bottom: 0;
+  left: 30px;
+  right: 0;
+  color: black;
+    visibility: hidden;
+}
+.img_wrap3:hover .img_desc3{
+    visibility: visible;
+    
+    opacity: .51;
 }
 footer>div>a>img{
     height: 20px;

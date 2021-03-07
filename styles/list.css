@@ -7,6 +7,8 @@ body{
 }
 header{
     background-color: rosybrown;
+    display:flex;
+    justify-content: space-between ;
     position: fixed;
     width: 100%;
     
@@ -42,6 +44,10 @@ header>#login{
      bottom: 3px;
 
 }
+.imgtex{
+    display: flex;
+    flex-direction: row;
+}
 #maped{
     display: none;
 }
@@ -50,7 +56,7 @@ header>#login{
    
 }
 #content div{
-    background-color:rgb(132, 136,139);
+    background-color:lightgrey;
     width: 40%;
     height: auto;
 }
@@ -67,6 +73,10 @@ header>#login{
 footer{
     background-color: rosybrown;
     position: fixed;
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 34px;
     bottom: 0;
     width:100%;
 }

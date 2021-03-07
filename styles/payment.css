@@ -1,17 +1,25 @@
 body{
     height: 100%;
     width: 100%;
-    margin: 0;
+   margin-bottom: 200px;
     background-color: #e0e0e0;
 }
 header{
     background-color:rosybrown;
     position: fixed;
     width: 100%;
+    display:flex;
+    justify-content: space-between ;
     top:0;
     padding: auto;
     z-index: 100;
   
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    
+    
 }
 header>a{
     text-decoration: none;
@@ -22,16 +30,47 @@ header>a{
 footer{
     background-color:rosybrown;
     position: fixed;
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
     bottom: 0;
     width:100%;
 }
 #contentpart1hotel{
 background-color: rgb(132,136, 139);
 margin-top: 2%;
+display: flex;
+flex-direction: row;
 margin-bottom: 2%;
 margin-left: auto;
 margin-right: auto;
 width: 50%;
+}
+
+#contentpart1hotel img{
+    max-height: 300px;
+    max-width: 270px;
+    padding-right: 10px;
+}
+#contentpart1hotel div{
+    padding-top: 23px;
+}
+#content-part2-payment{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border:2px solid black;
+    background-color: rosybrown;
+    border-radius: 25px;
+    margin:30px;
+    margin-bottom: 30px;
+}
+#content-part2-payment b{
+font-family: cursive;
 }
 #customerdetails
 {
@@ -39,8 +78,7 @@ margin: 2%;
 }
 #tariffdetails{
     margin: 1%;
-    border:1px solid black;
-    border-radius: 5px;
+   
     
     padding: 1% 2%;
 }
