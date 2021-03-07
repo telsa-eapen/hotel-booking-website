@@ -6,9 +6,24 @@ body{
 }
 header{
     background-color:rosybrown;
+    position: fixed;
+    width: 100%;
+    top:0;
+    padding: auto;
+    z-index: 100;
+  
+}
+header>a{
+    text-decoration: none;
+    color: rgb(22, 20, 20);
+   float: right;
+    margin:20px;
 }
 footer{
     background-color:rosybrown;
+    position: fixed;
+    bottom: 0;
+    width:100%;
 }
 #contentpart1hotel{
 background-color: rgb(132,136, 139);
@@ -23,7 +38,7 @@ width: 50%;
 margin: 2%;
 }
 #tariffdetails{
-    margin: 2%;
+    margin: 1%;
     border:1px solid black;
     border-radius: 5px;
     
@@ -37,7 +52,11 @@ margin: 2%;
     height: 500px;
     width: 500px;
 }
-footer>a>img{
+footer>div>a>img{
     height: 20px;
     width: 22px;
+    float:right;
+    margin: 2px;
+    top:25%;
+   
 }

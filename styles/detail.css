@@ -14,21 +14,47 @@ body{
     margin: 1% 4% 4%;
 }
 header{
-    background-color: rosybrown;
+    background-color:rosybrown;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    margin-bottom: 5px;
 }
 footer{
     background-color: rosybrown;
+    width: 100%;
+  
+    position: fixed;
+    
+    bottom: 0;
+}
+header>#login{
+    text-decoration: none;
+    color: rgb(22, 20, 20);
+   float: right;
+    margin:20px;
 }
 header>a>#logoid1
 {
     width: 60px; 
     height: 60px;
+    float: left;
 }
 #radisson{
     height: 500px;
     width: 500px;
+    top:30%;
 }
 footer>a>img{
     height: 20px;
     width: 22px;
+}
+footer>div>a>img{
+    height: 20px;
+    width: 22px;
+    float:right;
+    margin: 2px;
+    top:2%;
+   
 }
