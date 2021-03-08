@@ -3,7 +3,10 @@
         <title>Index</title>
         <link href="styles/index.css" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-        <style>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+    <style>
             body{
                 font-family: 'Ubuntu',sans-serif;
             }
@@ -13,10 +16,39 @@
     <body>
         <header>
             <img src="assests/images/logo.png" alt="logo" id="logoid" />
-             <a href="login.html">Login</a>
+            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#example-modal" id="sign-in-button">
+                Sign In
+            </button>
+              
             </header>
         
         <div id="content">
+          <div class="modal fade" id="example-modal" tabindex="-1" role="dialog" aria-labelledby="example-modalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modal-header">Please Login</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                        <form >
+                            <div class="form-group">
+                                <label for="exmple-input-email">Username:</label>
+                                <input type="text" class="form-control" id="exmple-input-email" aria-describedby="usernameHelp" placeholder="Enter your username">
+                                <label for="exmple-input-password">Password:</label>
+                                <input type="password" class="form-control" id="exmple-input-password" aria-describedby="passwordHelp" placeholder="Enter your Password">
+                           
+                            </div>
+                            <button type="login" class="btn btn-primary">Login</button>
+                            
+                        </form>
+                </div>
+                <div class="modal-footer"></div>
+              </div>
+            </div>
+          </div>
             
             <div id="containsearch"><input type="search" id="searchbar" placeholder="City" /></div> 
             <div id="city">
@@ -30,21 +62,41 @@
 <div class="img_wrap3"><img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg
 " alt="Kolkata" /> <p class="img_desc3">Kolkata</p></div> 
            </div>
-           <a href="index.html" style="margin-left: 600px; text-decoration: none; color: black;">View more >></a> 
-        
+           <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#index.html">View more</button>
         </div>
     
         
-</body>
-<footer >
-    <div > <a href="contact.html" style="color:black; text-decoration: none;" method="GET">Contact Us</a></div> <br/>
+
+<footer style="">
+    <div> <button type="button" class="btn btn-info" data-toggle="modal" data-target="#example-modal-signup">Contact Us</button></div> 
+    <br/>
     <div style="font-size: 10px; text-align: center;" > &#169; 2020 ROOM SEARCH PVT. LTD</div><br/>
-     <div style="float: right;  margin-bottom: 5px;"><a href="https://www.twitter.com/" target="_blank"><img src="assests/images/twitter.png" style=" margin-right: 20px;"/></a>
+     <div style="float: right;  margin-bottom: 14px; bottom: 5%;"><a href="https://www.twitter.com/" target="_blank"><img src="assests/images/twitter.png" style=" margin-right: 20px;"/></a>
      <a href="https://www.instagram.com/" target="_blank"><img src="assests/images/instagram.png"/></a>
       <a href="https://www.facebook.com/" target="_blank"><img src="assests/images/facebook.png" /></a></div>
        
        
    
 </footer>
+<div class="modal fade" id="example-modal-signup" tabindex="-1" role="dialog" aria-labelledby="example-modal-signupLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="example-modal-signupLabel">Get in touch</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+              <form>
+                  <div class="form-group">
+                      <label for="signupUsername">Thank you for reaching out.Please enter your email.</label>
+                      <input type="text" class="form-control" id="signupEmailaddress" aria-describedby="usernameHelp" placeholder="Enter email">
+                      
+</div>
+                  <button type="login" class="btn btn-primary" style="float: right;">Submit</button> </form>
+      </div>
+      <div class="modal-footer"></div>
+    </div> </div></div></body>
 
 </html>

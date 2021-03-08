@@ -1,5 +1,5 @@
 body{
-    height:100%;
+    height: fit-content;
     width: 100%;
     margin: 0;
     background-color: #e0e0e0;
@@ -12,7 +12,7 @@ header{
     position: fixed;
     width: 100%;
     padding: auto;
-    z-index: 100;
+    z-index: 1;
   
 }
 #containsearch>input{
@@ -27,7 +27,7 @@ header{
 
 }
 
-header>a{
+header>button{
     text-decoration: none;
     color: rgb(22, 20, 20);
    float: right;
@@ -76,10 +76,10 @@ footer{
     width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-top: 34px;
-  height: max-content;
-  bottom: 0;
+  
+  height: 120px;
+  
+ bottom: 0;
     position: fixed;
     padding-left: 2px;
    
@@ -163,7 +163,7 @@ footer>div>a>img{
     height: 20px;
     width: 22px;
     float:right;
-    margin: 2px;
-    top:2%;
+   bottom:100px;
+    top:1%;
    
 }
