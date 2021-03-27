@@ -1,104 +1,27 @@
-body{
-    height: 100%;
-    width: 100%;
-   margin-bottom: 200px;
-    background-color: #e0e0e0;
+#hotel-details {
+    background-color: rgb(132, 136, 139);
+    width: 50%;
+    height: 20%;
+    margin: 2% auto;
+    display: flex;
+    align-items: center;
 }
-header{
-    background-color:rosybrown;
-    position: fixed;
-    width: 100%;
-    display:flex;
-    justify-content: space-between ;
-    top:0;
-    padding: auto;
-    z-index: 100;
-  
-}
-#container{
+#payment-container {
+    margin-top:10%;
     display: flex;
     flex-direction: column;
-    
-    
+    align-content: center;
 }
-header>button{
-    text-decoration: none;
-    color: rgb(22, 20, 20);
-   float: right;
-    margin:20px;
-    margin-right: 2%;
-    
-}
-footer{
-    background-color:rosybrown;
-    position: fixed;
-    display: flex;
-    height: 67px;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 100px;;
-  padding-left: 10px;
-  padding-bottom: 5px;
-  padding-top: 5px;
-    bottom: 0;
-    width:100%;
-}
-#contentpart1hotel{
-background-color: rgb(132,136, 139);
-margin-top: 2%;
-display: flex;
-flex-direction: row;
-margin-bottom: 2%;
-margin-left: auto;
-margin-right: auto;
-width: 50%;
-}
-
-#contentpart1hotel img{
+.hotel-image {
     max-height: 300px;
     max-width: 270px;
-    padding-right: 10px;
 }
-#contentpart1hotel div{
-    padding-top: 23px;
-}
-#content-part2-payment{
+#customer-payment-details {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     align-items: center;
-    border:2px solid black;
+    justify-content: space-evenly;
+    border: black 1px solid;
+    border-radius: 5px;
+    margin: 0% 2%;
     background-color: rosybrown;
-    border-radius: 25px;
-    margin:30px;
-    margin-bottom: 30px;
-}
-#content-part2-payment b{
-font-family: cursive;
-}
-#customerdetails
-{
-margin: 2%;
-}
-#tariffdetails{
-    margin: 1%;
-   
-    
-    padding: 1% 2%;
-}
-#logoid
-{
-    width: 60px; height: 60px;
-}
-#hotelimg{
-    height: 500px;
-    width: 500px;
-}
-footer>div>a>img{
-    height: 20px;
-    width: 22px;
-    float:right;
-    margin: 2px;
-    
-   
 }

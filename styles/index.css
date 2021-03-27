@@ -1,169 +1,71 @@
-body{
-    height: fit-content;
-    width: 100%;
-    margin: 0;
-    background-color: #e0e0e0;
-    padding-bottom:6%;
+/* Added CSS for city image on landing page */
+#index-container {
+    display: flex;
+    flex-direction: column;
 }
-header{
-    background-color:rosybrown;
-    display:flex;
-    justify-content: space-between ;
-    position: fixed;
-    width: 100%;
-    padding: auto;
-    z-index: 1;
-  
+#city-cards {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4% 0%;
 }
-#containsearch>input{
-  margin-top: 200px;
-  margin-left: 450px;
-  border: 1px solid transparent;
-  border-radius: 12px;
-  background-color: #f1f1f1;
-  padding: 10px;
-  font-size: 16px;
-  width: 400px;
-
-}
-
-header>button{
-    text-decoration: none;
-    color: rgb(22, 20, 20);
-   float: right;
-    margin:20px;
-    margin-right: 2%;
-    
-}
-header>img{
-    margin-left: 1%;
-}
-    
-#logoid
-{
-    width: 60px; height: 60px;
-}
-#city img{
-height:150px ;
-width: 150px;
-}
-#containsearch{
-   
-    background-image: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg);
-    background-size:cover;
-    position: relative;
-    height: 380px;
-    background-position: center;
-    
-}
-#city{
-   display: flex;
-   justify-content: center;
-   
-}
-#city a{
-    padding: 4%;
-}
-#city img{padding: 4%; border-radius: 25%;
-
-box-shadow:10px 10px 10px grey;}
-
-#content>#containsearch>input{
-outline-style: none;
-}
-footer{
-    background-color: rosybrown;
-    width: 100%;
-  display: flex;
-  justify-content: space-between;
-  
-  height: 120px;
-  
- bottom: 0;
-    position: fixed;
-    padding-left: 2px;
-   
-    
-    
-}
-.img_wrap{
-    position: relative;
+.city-image{
     height: 150px;
     width: 150px;
+    border-radius: 25%;
+    box-shadow: 10px 10px 10px grey;
 }
-.img_desc{
-    position: absolute;
-    top: 50px;
-  bottom: 0;
-  left: 30px;
-  right: 0;
-  color: #f1f1f1;
-    visibility: hidden;
-}
-.img_wrap:hover .img_desc{
-    visibility: visible;
-    
-    opacity: .51;
-}
-.img_wrap1{
+.city-card-and-name-inner {
     position: relative;
-   top:20px;
 }
-.img_desc1{
-    position: absolute;
-    top: 50px;
-  bottom: 0;
-  left: 30px;
-  right: 0;
-  color: black;
-    visibility: hidden;
-}
-.img_wrap1:hover .img_desc1{
-    visibility: visible;
-    
-    opacity: .51;
-}
-.img_wrap2{
+/* Added CSS for background image */
+#banner{
+    background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
+    /* Control the height of the image */
+    height: 380px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
-   top:20px;
 }
-.img_desc2{
+#search-bar {
     position: absolute;
-    top: 50px;
-  bottom: 0;
-  left: 30px;
-  right: 0;
-  color: black;
-    visibility: hidden;
+    top: 50%;
+    left: 36%; 
+    right: 36%;
+    bottom: 50%;
 }
-.img_wrap2:hover .img_desc2{
-    visibility: visible;
-    
-    opacity: .51;
+#search-input {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 12px;
+    width: 100%;
 }
-.img_wrap3{
-    position: relative;
-   top:20px;
+#search-input:focus {
+    outline: none;
 }
-.img_desc3{
+.overlay {
     position: absolute;
-    top: 50px;
-  bottom: 0;
-  left: 30px;
-  right: 0;
-  color: black;
-    visibility: hidden;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    text-align: center;
+    border-radius: 25%;
 }
-.img_wrap3:hover .img_desc3{
-    visibility: visible;
-    
-    opacity: .51;
+.city-card-and-name-inner:hover .overlay {
+    opacity: 1;
 }
-footer>div>a>img{
-    height: 20px;
-    width: 22px;
-    float:right;
-   bottom:100px;
-    top:1%;
-   
+.overlay span {
+    position:relative;
+    top:45%;
+}
+#view-more {
+    margin-bottom:7%;
+    display: flex;
+    justify-content: center;
 }
